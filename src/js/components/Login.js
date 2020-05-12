@@ -2,7 +2,8 @@ import React from 'react';
 import Header from '../containers/Header';
 import Example from './Example';
 import {
-    Alert
+    Alert,
+    Container,
 } from 'reactstrap';
 
 export default class Login extends React.Component {
@@ -12,11 +13,11 @@ export default class Login extends React.Component {
     }
     render() {
         return (
-            <div className="container">
+            <Container>
             <Alert color="primary">
-                กรุณาระบุตัวตนเพื่อใช้งานระบบบริหารการเชื่อมต่อ
+                กรุณาระบุตัวตนเพื่อตรวจสอบการเชื่อมต่อ
             </Alert>
-            <div className="container">
+            <Container>
                 <form className="form-signin" method="POST" onSubmit={this.doLogin}>
                     <label for="inputID" className="sr-only">User ID</label>
                     <input type="text" id="inputID" className="form-control" placeholder="User ID" required="" autofocus="" />
@@ -29,8 +30,8 @@ export default class Login extends React.Component {
                         </div>
                     <button className="btn btn-lg btn-primary btn-block" type="submit">Login</button>
                 </form>
-            </div>
-            </div>
+            </Container>
+            </Container>
                         );
     }
 }

@@ -7,9 +7,6 @@ import Main from './Main';
 
 const App = () => (
     <div>
-        {/* <h1>Hello World</h1>
-        <Button color="danger">Danger!</Button> */}
-        
         <Main />
     </div>
 );
